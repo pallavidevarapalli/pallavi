@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header,
+nav,
+main,
+footer {
+  padding: 5px;
+}
+
+header {
+  background-color: mediumvioletred; /* Orange */
+  color: #fff; /* White */
+  text-align: center;
+  display: flex; /* Center logo and search bar horizontally */
+  justify-content: space-between; /* Distribute elements evenly */
+  align-items: center; /* Align vertically */
+  padding:0px;
+}
+
+.logo {
+  width:10px;
+
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  text-align: left;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Dark gray */
+}
+
+nav li:hover a {
+  color: #ff7f50; /* Orange on hover */
+}
+
+nav form {
+  display: flex;
+  align-items: left;
+}
+
+nav input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+nav button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+.product-images {
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel img {
+  display: block;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img:first-child {
+  opacity: 1;
+}
+
+.control-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.control-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.previous {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+.popular-recipes,
+.recipe-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow recipes to wrap to next line on smaller screens */
+  justify-content: space-between; /* Distribute recipes evenly */
+}
+
+.recipe-card {
+  width: calc(33% - 40px); /* Calculate card width based on number of cards per row */
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden; /* Prevent image overflow */
+  text-align: center;
+}
+
+.recipe-card a {
+  display: block;
+  text-decoration: none;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Crop image to fit card */
+}
+
+.recipe-card h3 {
+  padding: 10px 0;
+  background-color: #f5f5f5;
+}
+.price-cart {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: #0069d9;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
